@@ -32,11 +32,18 @@ Install the dependencies
 Configure the dbsettings schema in app/schemas.py according
 to the PGAdmin details of your Postgres DB. 
 
+Run init__db.py to create Tables in DB:
+
+```bash
+python init_db.py
+```
+
 Run the project using uvicorn
 
 ```bash
     uvicorn main:app --reload
 ```
+
 
 Run add_data.py to add some basic data:
 
